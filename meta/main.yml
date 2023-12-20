@@ -16,4 +16,5 @@ galaxy_info:
     - kubernetes
     - k8s
     - development
-dependencies: []
+dependencies:
+  - community.general
