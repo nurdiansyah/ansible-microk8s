@@ -3,4 +3,4 @@
 
 - name: Refresh certs
   become: yes
-  command: microk8s refresh-certs
+  command: /snap/bin/microk8s refresh-certs
