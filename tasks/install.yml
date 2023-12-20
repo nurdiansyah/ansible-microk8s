@@ -6,13 +6,13 @@
   become: yes
   when: ansible_distribution != 'Archlinux'
 
-- name: Make sure snapd is installed
-  pacman:
-    name:
-      - snapd
-    state: present
-  become: yes
-  when: ansible_distribution == 'Archlinux'
+#- name: Make sure snapd is installed
+#  pacman:
+#    name:
+#      - snapd
+#    state: present
+#  become: yes
+#  when: ansible_distribution == 'Archlinux'
 
 - name: Check if is raspberry
   shell: "uname -r"
